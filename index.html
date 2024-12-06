@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업형웹페이지 실습</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <ul class="gnb">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sitemap</a></li>
+        </ul>
+        <nav class="nav">
+            <div class="logo">
+                CAT.COM
+            </div>
+            <ul class="menu">
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">LOCATION</a></li>
+            </ul>
+            <ul class="m_menu">
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">LOCATION</a></li>
+            </ul>
+            <button type="button" class="m_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    <div class="main">
+        <video src="img/고양이 영상.mp4" autoplay loop muted></video>
+        <div class="main_title">
+            <h1>MIYAO</h1>
+            <p>
+            Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit.<br>
+            Id praesentium molestias similique quaerat
+            magni facere in a? Adipisci, possimus
+            reprehenderit!
+            </p>
+            <a href="#">view detail</a>
+        </div>
+    </div>
+    <div class="contents">
+        <p>RECENT NEWS</p>
+        <ul class="list">
+            <li>
+                <a href="#">
+                    <img src="img/고양이1.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur<br>
+                        adipisicing elit. Vitae minus, eaque corrupti<br>
+                        vero ad maiores!
+                    </p>
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                    <img src="img/고양이2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur<br>
+                        adipisicing elit. Vitae minus, eaque corrupti<br>
+                        vero ad maiores!
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/고양이3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur<br>
+                        adipisicing elit. Vitae minus, eaque corrupti<br>
+                        vero ad maiores!
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/고양이4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur<br>
+                        adipisicing elit. Vitae minus, eaque corrupti<br>
+                        vero ad maiores!
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer class="footer">
+        <div class="f_top">
+            <div class="logo">CAT.COM</div>
+            <ul class="f_menu">
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+            
+        </div>
+        <div class="copyright">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, facere.<br>
+            TEL : 031-111-1234 C.P : 010-1234-5678<br><br>
+            2020 DOCDELAB © copyright all right reserved.
+        </div>
+    </footer>
+    <script>
+        $(".m_menu").hide();
+        $(".m_btn").click(function(){
+            $(".m_menu").slideToggle()
+        })
+    </script>
+</body>
+</html>
